@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            height: 400px;
+            width: 500px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        #pokemonName {
+            height: 55px;
+            width: 70%;
+            margin-left: 20px;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+
+        .container button {
+            padding: 20px 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: orange;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fetch pokimon characters</h1>
+        <input type="text" id="pokemonName" placeholder="enter the pokemon name">
+        <button onclick="fetchdata()">Search</button>
+        <div class="image"><img src="" alt="pokemon-img" style="display: none;" id="pokemonImg"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
